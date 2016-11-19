@@ -2,6 +2,7 @@ This is a simple script to help show where your network bandwidth is going.
 
 It shows two reports, one for host:port pairs:
 
+```
 sorted list of host:port pairs
  124377884 10.22.5.12.720 -> 10.22.5.30.2049 5494.358957 kbit/sec
   84917064 128.120.242.198.53 -> 10.22.5.30.50420 3751.188042 kbit/sec
@@ -14,8 +15,10 @@ sorted list of host:port pairs
    1071288 10.22.5.30.2049 -> 10.22.5.2.684 47.323854 kbit/sec
    1048420 10.22.5.30.2049 -> 10.22.6.12.978 46.313666 kbit/sec
     805796 10.22.5.30.2049 -> 10.22.6.22.680 35.595818 kbit/sec
+```
 
 Another just sorted on host:port:
+```
 sorted list of IP:port 
  215353700 10.22.5.30.2049 9513.190708 kbit/sec
  125039520 10.22.5.12.720 5523.586546 kbit/sec
@@ -28,10 +31,12 @@ sorted list of IP:port
    3223316 10.22.6.12.978 142.389101 kbit/sec
    1570072 10.22.5.30.6817 69.357501 kbit/sec
     382653 10.22.0.1.57554 16.903591 kbit/sec
-
+```
 
 It builds a list of IP:port pairs and sorts them by bandwidth.
 
 To run:
+```
    $ sudo tcpdump -n -c 100000 | ./tcpdump.pl
+```
 
