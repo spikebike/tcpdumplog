@@ -33,8 +33,6 @@ sorted list of IP:port
     382653 10.22.0.1.57554 16.903591 kbit/sec
 ```
 
-It builds a list of IP:port pairs and sorts them by bandwidth.
-
 To run:
 ```
    $ sudo tcpdump -n -c 100000 | ./tcpdump.pl
